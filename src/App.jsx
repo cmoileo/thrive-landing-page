@@ -1,5 +1,6 @@
 import Header from "./Sections/Header/Header"
 import About from "./Sections/About/About"
+import Services from "./Sections/Services/Services"
 import "./styles/Main.scss"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <About />
+      <Services />
     </div>
   )
 }

@@ -1,0 +1,27 @@
+.services-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 85%;
+    gap: 50px;
+    justify-items: center;
+    cursor: pointer;
+
+    & div {
+        background-color: $main-purple;
+        height: 135px;
+        width: 100%;
+        align-self: center;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & p {
+            color: white;
+            font-size: 40px;
+            font-weight: 900;
+        }
+    }
+}
