@@ -1,6 +1,6 @@
 
 export default function Blog() {
   return (
-    <div>Blog</div>
+    <section className="blog-container"></section>
   )
 }

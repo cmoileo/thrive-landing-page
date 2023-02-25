@@ -4,6 +4,8 @@ import Services from "./Sections/Services/Services"
 import Portfolio from "./Sections/Portfolio/Portfolio"
 import "./styles/Main.scss"
 import Skills from "./Sections/Skills/Skills"
+import Experience from "./Sections/Experience/Experience"
+import Blog from "./Sections/Blog/Blog"
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <Services />
       <Portfolio />
       <Skills />
+      <Experience />
+      <Blog />
     </div>
   )
 }
