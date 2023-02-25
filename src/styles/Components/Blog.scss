@@ -1,3 +1,39 @@
 .blog-container {
     margin-top: 200px;
+
+    &__item {
+        display: flex;
+        margin-bottom: 75px;
+
+        &__left {
+
+            & img {
+                width: 430px;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+        }
+
+        &__right {
+            margin-left: 50px;
+
+            & h2 {
+                letter-spacing: 1px;
+                font-size: 28px;
+                line-height: 33px;
+                font-weight: 900;
+                color: $main-purple;
+                cursor: pointer;
+            }
+
+            & p {
+                letter-spacing: 1px;
+                margin: 35px 0 60px;
+                color: $main-purple;
+                font-size: 15px;
+            }
+        }
+    }
 }
