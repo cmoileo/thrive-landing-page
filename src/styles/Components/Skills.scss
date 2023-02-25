@@ -1,0 +1,99 @@
+.skills-container {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+
+    &__left {
+        padding: 45px;
+        background-color: $main-purple;
+        border-radius: 25px;
+
+        & h2 {
+            letter-spacing: 1px;
+            color: white;
+            font-weight: 900;
+            font-size: 28px;
+        }
+
+        & p {
+            margin-top: 30px;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+        }
+    }
+
+    &__right {
+        margin-left: 50px;
+        width: 30%;
+
+        &__item {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            & h3 {
+                letter-spacing: 1px;
+                font-size: 32px;
+                font-weight: 300;
+                color: $main-purple;
+            }
+
+            & p {
+                letter-spacing: 5px;
+                color: $main-purple;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+
+            &__right {
+                margin-top: -10px;
+
+                &__progress-bar {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: flex-start;
+    
+                    &__purple {
+                        height: 28px;
+                        width: 100%;
+                        border-radius: 100px;
+                        background-color: $main-purple;
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    &__white {
+                        position: absolute;
+                        height: 10px;
+                        width: 360px;
+                        background-color: white;
+                        border-radius: 100px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pg-1 {
+    width: 270px;
+}
+.pg-2 {
+    width: 160px;
+}
+.pg-3 {
+    width: 320px;
+}
+.pg-4 {
+    width: 235px;
+}
+.pg-5 {
+    width: 305px;
+}

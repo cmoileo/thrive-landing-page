@@ -3,6 +3,7 @@ import About from "./Sections/About/About"
 import Services from "./Sections/Services/Services"
 import Portfolio from "./Sections/Portfolio/Portfolio"
 import "./styles/Main.scss"
+import Skills from "./Sections/Skills/Skills"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      <Skills />
     </div>
   )
 }
