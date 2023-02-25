@@ -1,0 +1,39 @@
+.portfolio-container {
+    margin-top: 200px;
+
+    &__item {
+        display: flex;
+        margin-bottom: 50px;
+
+        & img {
+            border-radius: 25px;
+        }
+
+        & h3 {
+            letter-spacing: 1px;
+            font-size: 28px;
+            font-weight: 800;
+            color: $main-purple;
+            cursor: pointer;
+        }
+
+        & p {
+            margin-top: 35px;
+            color: $main-purple;
+            font-size: 16px;
+        }
+
+        &__left {
+            padding: 30px 0px 0px 30px;
+        }
+        
+        &__link {
+            margin-top: 35px;
+            font-size: 12px;
+        }
+    }
+
+    &__load-more {
+        font-size: 16px;
+    }
+}

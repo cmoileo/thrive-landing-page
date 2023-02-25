@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <div className="about-container">
+    <section className="about-container">
       <div className="about-container__left">
         <div>
           <h3>NAME</h3>
@@ -72,6 +72,6 @@ export default function About() {
           <i aria-hidden="true" class="fas fa-download"></i>
           </div>
       </div>
-    </div>
+    </section>
   )
 }
