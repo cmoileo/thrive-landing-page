@@ -1,8 +1,24 @@
+import { useEffect, useRef } from "react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Experience() {
+
+  const sectionTitle = useRef(null)
+
+  useEffect(() => {
+    const sectionTitleEl = sectionTitle.current
+
+    gsap.fromTo(sectionTitleEl, {x: 50}, {x: 0, duration: .7, scrollTrigger: {
+      trigger: sectionTitleEl
+    }} )
+
+  }, [])
+
   return (
     <section className="experience-container">
-                        <div className="section-name-container">
+                        <div className="section-name-container" ref={sectionTitle}>
               <h1 >Exp.</h1>
             </div>
       <div className="experience-container__item">

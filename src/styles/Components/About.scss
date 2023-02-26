@@ -36,18 +36,22 @@
             & i {
                 color: white;
                 cursor: pointer;
+
+                &:hover {
+                    animation: fade2 ease-in .2s forwards;
+                }
             }
         }   
     }
 
     &__right {
+        align-self: flex-end;
 
         &__bullet-points {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             margin-bottom: 30px;
-            align-self: flex-end;
 
             &__item {
                 margin-bottom: 30px;
@@ -82,7 +86,7 @@
         }
 
         &__button {
-            padding: 22px 130px;
+            padding: 25px 130px;
             border: none;
             background-color: $main-heavy-pink;
             display: flex;
@@ -91,11 +95,15 @@
             align-items: center;
             gap: 30px;
             margin-top: 50px;
+
+            &:hover {
+                animation: fade ease-in .1s forwards;
+            }
             
             & h4 {
                 letter-spacing: 2px;
                 color: white;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 600;
             }
 
@@ -104,5 +112,22 @@
             }
 
         }
+    }
+}
+
+@keyframes fade {
+    0% {
+        background-color: $main-heavy-pink;
+    }
+    100% {
+        background-color: $main-purple;
+    }
+}
+@keyframes fade2 {
+    0% {
+       color: white;
+    }
+    100% {
+        color: $main-salmon;
     }
 }

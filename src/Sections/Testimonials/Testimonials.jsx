@@ -3,11 +3,26 @@ import CompagnyLogo1 from "../../assets/company_logo_01@2x.png"
 import CompagnyLogo2 from "../../assets/company_logo_02@2x.png"
 import CompagnyLogo3 from "../../assets/company_logo_03@2x.png"
 import CompagnyLogo4 from "../../assets/company_logo_04@2x.png"
+import { useEffect, useRef } from "react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Testimonials() {
+  const sectionTitle = useRef(null)
+
+  useEffect(() => {
+    const sectionTitleEl = sectionTitle.current
+
+    gsap.fromTo(sectionTitleEl, {x: 50}, {x: 0, duration: .7, scrollTrigger: {
+      trigger: sectionTitleEl
+    }} )
+
+  }, [])
+
   return (
     <section className="testimonials-container">
-            <div className="section-name-container">
+            <div className="section-name-container" ref={sectionTitle}>
               <h1 >Refs</h1>
             </div>
       <div className="testimonials-container__texts">

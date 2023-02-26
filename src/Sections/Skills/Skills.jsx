@@ -1,8 +1,28 @@
+import { useEffect, useRef } from "react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Skills() {
+  const t1 = useRef(null)
+  const sectionTitle = useRef(null)
+
+  useEffect(() => {
+    const el1 = t1.current
+    const sectionTitleEl = sectionTitle.current
+
+    gsap.fromTo(el1, {opacity: 0}, {opacity: 1, duration: 1, scrollTrigger: {
+      trigger: el1
+    }} )
+    gsap.fromTo(sectionTitleEl, {x: 50}, {x: 0, duration: .7, scrollTrigger: {
+      trigger: sectionTitleEl
+    }} )
+
+  }, [])
+
   return (
-   <section className="skills-container">
-            <div className="section-name-container" style={{left: "-150px"}}>
+   <section className="skills-container" ref={t1}>
+            <div className="section-name-container" style={{left: "-150px"}} ref={sectionTitle}>
               <h1 >Skills</h1>
             </div>
     <div className="skills-container__left">

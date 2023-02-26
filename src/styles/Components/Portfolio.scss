@@ -5,8 +5,24 @@
         display: flex;
         margin-bottom: 50px;
 
-        & img {
+        &__img {
+            max-width: 650px;
+            max-height: 650px;
+            overflow: hidden;
             border-radius: 25px;
+        }
+
+        & img {
+            transition: transform .2s;
+            cursor: pointer;
+            width: 100%;
+            -webkit-transition: all 0.2s ease;
+           -moz-transition: all 0.2s ease;
+           transition: all 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         & h3 {
@@ -15,6 +31,10 @@
             font-weight: 800;
             color: $main-purple;
             cursor: pointer;
+
+            &:hover {
+                animation: ungrow .5s ease-out forwards;
+            }
         }
 
         & p {
@@ -35,5 +55,11 @@
 
     &__load-more {
         font-size: 16px;
+    }
+}
+
+@keyframes growImage {
+    100% {
+        width: 110%;
     }
 }

@@ -4,6 +4,7 @@
 
 body {
     background-color: $main-light-pink;
+    overflow-x: hidden;
 }
 
 .App {
@@ -28,6 +29,13 @@ body {
         bottom: -5px;
         height: 3px;
         width: calc(100% - 3px);
+    }
+
+    &:hover {
+        animation: ungrow .5s ease-out forwards;
+    }
+    &:hover::after {
+        animation: ungrow2 .5s ease-out forwards;
     }
 }
 
@@ -79,4 +87,20 @@ body {
     left: 50%;
     width: 1650px;
     height: 1650px;
+}
+
+@keyframes ungrow {
+    0% {
+    }
+    100% {
+        color: white;
+    }
+}
+@keyframes ungrow2 {
+    0% {
+    }
+    100% {
+        background-color: white;
+        width: 10%;
+    }
 }
