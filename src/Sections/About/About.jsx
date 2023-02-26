@@ -2,8 +2,10 @@ import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
+import CountUp, { useCountUp } from 'react-countup';
 
 export default function About() {
+
   const sectionTitle = useRef(null)
   const t1 = useRef(null)
   const t2 = useRef(null)
@@ -124,7 +126,7 @@ export default function About() {
   }, [])
 
   return (
-    <section className="about-container">
+    <section className="about-container" id="about">
       <div className="section-name-container" style={{left: "-160px", marginTop: "150px"}}>
         <h1 ref={sectionTitle}>About</h1>
       </div>
@@ -175,19 +177,19 @@ export default function About() {
         <div className="about-container__right__bullet-points">
           <div className="about-container__right__bullet-points__item">
             <p>AWARDS</p>
-            <h3>38</h3>
+            <h3> <CountUp end={38} /> </h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>XP YEARS</p>
-            <h3>12 +</h3>
+            <h3> <CountUp end={12} />+</h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>CLIENTS</p>
-            <h3>54</h3>
+            <h3> <CountUp end={54} /> </h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>PROJECTS</p>
-            <h3>76</h3>
+            <h3> <CountUp end={76} /> </h3>
           </div>
         </div>
         <h2>Nam ultrices ultrices nec tortor<br />pulvinar esteras loremips est</h2>

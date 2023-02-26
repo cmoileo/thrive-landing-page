@@ -21,7 +21,7 @@ export default function Skills() {
   }, [])
 
   return (
-   <section className="skills-container" ref={t1}>
+   <section className="skills-container" ref={t1} id="skills">
             <div className="section-name-container" style={{left: "-150px"}} ref={sectionTitle}>
               <h1 >Skills</h1>
             </div>

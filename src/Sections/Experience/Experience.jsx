@@ -17,7 +17,7 @@ export default function Experience() {
   }, [])
 
   return (
-    <section className="experience-container">
+    <section className="experience-container" id="experience">
                         <div className="section-name-container" ref={sectionTitle}>
               <h1 >Exp.</h1>
             </div>

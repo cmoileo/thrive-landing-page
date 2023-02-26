@@ -68,3 +68,12 @@
         transform: translateX(-20px);
     }
 }
+
+.active-section::after {
+    animation: grow .3s ease-out forwards
+}
+
+a {
+    text-decoration: none;
+    color: $main-violet;
+}

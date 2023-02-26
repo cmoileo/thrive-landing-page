@@ -29,7 +29,7 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <section className="portfolio-container">
+    <section className="portfolio-container" id='portfolio'>
             <div className="section-name-container" ref={sectionTitle} style={{marginTop: "270px", left: "-290px"}}>
               <h1 style={{position: "relative"}}>Portfolio</h1>
             </div>

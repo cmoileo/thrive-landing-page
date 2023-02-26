@@ -21,7 +21,7 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section className="testimonials-container">
+    <section className="testimonials-container" id="testimonial">
             <div className="section-name-container" ref={sectionTitle}>
               <h1 >Refs</h1>
             </div>

@@ -34,7 +34,7 @@ export default function Blog() {
   }, [])
 
   return (
-    <section className="blog-container">
+    <section className="blog-container" id="blog">
             <div className="section-name-container" ref={sectionTitle}>
               <h1>Blog</h1>
             </div>

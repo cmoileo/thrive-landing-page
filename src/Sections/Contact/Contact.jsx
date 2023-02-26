@@ -16,7 +16,7 @@ export default function Contact() {
   }, [])
 
   return (
-    <section className="contact-container">
+    <section className="contact-container" id="contact">
                         <div ref={sectionTitle} className="section-name-container" style={{left: "-140px"}}>
               <h1 >Hello</h1>
             </div>

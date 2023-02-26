@@ -46,7 +46,7 @@ export default function Services() {
   }, [])
 
   return (
-    <section className="services-container">
+    <section className="services-container" id="services">
             <span className="section-name-container" ref={sectionTitle}>
               <h1 >Svcs</h1>
             </span>
