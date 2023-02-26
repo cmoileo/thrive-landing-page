@@ -6,6 +6,7 @@ import "./styles/Main.scss"
 import Skills from "./Sections/Skills/Skills"
 import Experience from "./Sections/Experience/Experience"
 import Blog from "./Sections/Blog/Blog"
+import Testimonials from "./Sections/Testimonials/Testimonials"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Experience />
       <Blog />
+      <Testimonials />
     </div>
   )
 }
