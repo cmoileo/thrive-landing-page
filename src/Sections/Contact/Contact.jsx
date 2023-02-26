@@ -1,7 +1,10 @@
+export default function Contact() {  
 
-export default function Contact() {
   return (
     <section className="contact-container">
+                        <div className="section-name-container" style={{left: "-140px"}}>
+              <h1 >Hello</h1>
+            </div>
       <div className="contact-container__left">
         <form action="sumbit">
           <div className="input-container">

@@ -5,6 +5,9 @@ import BlogItem3 from "../../assets/blog_item_03.jpg"
 export default function Blog() {
   return (
     <section className="blog-container">
+            <div className="section-name-container">
+              <h1 >Blog</h1>
+            </div>
       <div className="blog-container__item">
         <div className="blog-container__item__left">
           <img src={BlogItem1} alt="" />

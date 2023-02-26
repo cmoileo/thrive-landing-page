@@ -8,18 +8,25 @@ import Experience from "./Sections/Experience/Experience"
 import Blog from "./Sections/Blog/Blog"
 import Testimonials from "./Sections/Testimonials/Testimonials"
 import Contact from "./Sections/Contact/Contact"
+import NavBar from "./Sections/NavBar/Navbar"
 
 function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Header />
+      <div className="round round1"></div>
       <About />
       <Services />
+      <div className="round round2"></div>
       <Portfolio />
+      <div className="round round3"></div>
       <Skills />
       <Experience />
+      <div className="round round4"></div>
       <Blog />
+      <div className="round round5"></div>
       <Testimonials />
       <Contact />
     </div>

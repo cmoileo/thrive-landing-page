@@ -4,6 +4,9 @@ import PFItem2 from '../../assets/portfolio_item_02.jpg'
 export default function Portfolio() {
   return (
     <section className="portfolio-container">
+            <div className="section-name-container" style={{marginTop: "270px", left: "-290px"}}>
+              <h1 >Portfolio</h1>
+            </div>
       <div className="portfolio-container__item">
         <div><img src={PFItem1} alt="" /></div>
         <div className='portfolio-container__item__left'>

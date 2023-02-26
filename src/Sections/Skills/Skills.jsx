@@ -2,6 +2,9 @@
 export default function Skills() {
   return (
    <section className="skills-container">
+            <div className="section-name-container" style={{left: "-150px"}}>
+              <h1 >Skills</h1>
+            </div>
     <div className="skills-container__left">
       <h2>Nam ultrices ultrices nec<br />tortor pulvinar esteras<br />loremips estorem ipusm</h2>
       <p>Mauris volutpat estera phasellus. Varius nec<br />orcina quam augue loremes lines rester<br />pellentesque non estar identiqum pere<br />setarra nunc vulputate id in nullam lorem<br />ipsum dolor setarra nunc vulputateester.</p>

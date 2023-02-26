@@ -1,6 +1,6 @@
 .testimonials-container {
     margin-top: 200px;
-    width: 90%;
+    width: 95%;
 
     &__item {
         padding: 40px;
@@ -32,9 +32,9 @@
                 display: block;
                 width: 45px;
                 height: 3px;
-                background-color: #e6e6f0;
-                left: 134%;
-                top: 44%;
+                background-color: white;
+                left: 126%;
+                top: 43.5%;
                 z-index: 2;
             }
 
@@ -72,9 +72,9 @@
                 display: block;
                 width: 45px;
                 height: 3px;
-                background-color: #e6e6f0;
-                left: -48%;
-                top: 45%;
+                background-color: white;
+                left: -40.5%;
+                top: 46%;
                 z-index: 2;
             }
 
@@ -107,7 +107,7 @@
     &__texts::before {
         content: '';
         position: absolute;
-        left: 46%;
+        left: 42.5%;
         background-color: #e6e6f0;
         width: 3px;
         height: 1225px;

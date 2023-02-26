@@ -7,6 +7,9 @@ import CompagnyLogo4 from "../../assets/company_logo_04@2x.png"
 export default function Testimonials() {
   return (
     <section className="testimonials-container">
+            <div className="section-name-container">
+              <h1 >Refs</h1>
+            </div>
       <div className="testimonials-container__texts">
         <div className="testimonials-container__item testimonials-container__item__right" style={{height: "265px"}}>
           <img src={Quotes} alt="" />

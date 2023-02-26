@@ -1,7 +1,11 @@
 
 export default function About() {
+
   return (
     <section className="about-container">
+      <div className="section-name-container" style={{left: "-160px", marginTop: "150px"}}>
+        <h1 >About</h1>
+      </div>
       <div className="about-container__left">
         <div>
           <h3>NAME</h3>

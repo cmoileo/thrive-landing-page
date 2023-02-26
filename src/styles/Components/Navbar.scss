@@ -1,0 +1,33 @@
+.navbar-container {
+    position: fixed;
+    right: 10%;
+    
+    & img {
+        width: 140px;
+        margin-bottom: 50px;
+    }
+
+    & p {
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: $main-violet;
+        font-size: 14px;
+        margin-bottom: 17px;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    &__extra {
+        display: flex;
+        margin-left: -10px;
+
+        & span::after {
+            content: '+';
+            color: white;
+            display: block;
+            position: relative;
+            right: 10px;
+            top: -2px;
+        }
+    }
+}

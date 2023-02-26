@@ -2,6 +2,9 @@
 export default function Experience() {
   return (
     <section className="experience-container">
+                        <div className="section-name-container">
+              <h1 >Exp.</h1>
+            </div>
       <div className="experience-container__item">
         <div className="experience-container__item__left">
           <p>September, 2016 – May, 2017</p>
