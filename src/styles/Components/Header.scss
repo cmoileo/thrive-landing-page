@@ -3,7 +3,18 @@
     margin-top: 50px;
     align-items: center;
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     &__left {
+
+        @media screen and (max-width: 800px) {
+            order: 2;
+            align-self: baseline;
+            margin-top: 30px;
+        }
 
     & h1 {
         font-size: 120px;
@@ -13,6 +24,13 @@
         letter-spacing: -2px;
         opacity: 0;
         animation: FadeOut 3s forwards;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 100px;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 80px;
+        }
     }
 
     & p {
@@ -73,6 +91,14 @@
             width: 115%;
             opacity: 0;
             animation: FadeOut 2s forwards;
+
+            @media screen and (max-width: 1200px) {
+                width: 135%;
+            }
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                margin-left: -2%;
+            }
         }
     }
 }

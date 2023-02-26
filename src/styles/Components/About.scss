@@ -3,6 +3,11 @@
     gap: 60px;
     margin-top: 200px;
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__left {
         padding: 50px 100px;
         padding-right: 150px;
@@ -12,6 +17,10 @@
         flex-direction: column;
         justify-content: space-between;
         height: 90vh;
+
+        @media screen and (max-width: 800px) {
+            width: 30%;
+        }
 
         & h3 {
             letter-spacing: 5px;
@@ -46,6 +55,10 @@
 
     &__right {
         align-self: flex-end;
+
+        @media screen and (max-width: 800px) {
+            align-self: center;
+        }
 
         &__bullet-points {
             display: grid;

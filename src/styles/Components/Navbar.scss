@@ -4,6 +4,10 @@
     opacity: 0;
     transform: translateX(20px);
     animation: navbarAnim 1s forwards;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
     
     & img {
         width: 140px;
