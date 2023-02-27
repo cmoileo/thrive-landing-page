@@ -67,6 +67,10 @@ html {
         color: $main-pale-pink;
         left: -130px;
     }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+       }
 }
 
 .round {
