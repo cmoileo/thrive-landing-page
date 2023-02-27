@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
@@ -28,6 +28,8 @@ export default function About() {
   const t19 = useRef(null)
   const t20 = useRef(null)
   const t21 = useRef(null)
+
+  const [isABoutSection, setIsAboutSection] = useState(false)
 
   useEffect(() => {
     const sectionTitleEl = sectionTitle.current
@@ -125,71 +127,76 @@ export default function About() {
 
   }, [])
 
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 800) 
+    setIsAboutSection(true)
+  })
+
   return (
     <section className="about-container" id="about">
       <div className="section-name-container" style={{left: "-160px", marginTop: "150px"}}>
         <h1 ref={sectionTitle}>About</h1>
       </div>
-      <div className="about-container__left">
-        <div>
-          <h3 ref={t1}>NAME</h3>
-          <p ref={t2}>Jacob Hawkings</p>
-        </div>
-        <div>
-          <h3 ref={t3}>BIRTHDAY</h3>
-          <p ref={t4}>25. 03. 1987.</p>
-        </div>
-        <div>
-        <h3 ref={t5}>ROLE</h3>
-          <p ref={t6}>Lead Designer</p>
-        </div>
-        <div>
-        <h3 ref={t7}>EMAIL</h3>
-          <p ref={t8}>stone@example.com</p>
-        </div>
-        <div>
-        <h3 ref={t9}>PHONE</h3>
-          <p ref={t10}>(+987) 987 654 321</p>
-        </div>
-        <div>
-        <h3 ref={t11}>WEBSITE</h3>
-          <p ref={t12}>www.somewebsite.com</p>
-        </div>
-        <div>
-        <h3 ref={t13}>LOCATION</h3>
-          <p ref={t14}>New York, USA</p>
-        </div>
-        <div>
-        <h3  ref={t15}>INTERESTS</h3>
-          <p ref={t16}>Games, Books, Movies</p>
-        </div>
-        <div>
-          <h3  ref={t17} className='gsap-anim-bottomToTop'>SOCIAL</h3>
-          <div className="about-container__left__icons">
-           <i ref={t18} aria-hidden="true" class="fab fa-behance"></i>
-           <i ref={t19} aria-hidden="true" class="fab fa-twitter"></i>
-           <i ref={t20} aria-hidden="true" class="fab fa-facebook-f"></i>
-           <i ref={t21} aria-hidden="true" class="fab fa-youtube"></i>
-          </div>
-        </div>
-      </div>
-      <div className="about-container__right">
+    <div className="about-container__left">
+  <div>
+    <h3 ref={t1}>NAME</h3>
+    <p ref={t2}>Jacob Hawkings</p>
+  </div>
+  <div>
+    <h3 ref={t3}>BIRTHDAY</h3>
+    <p ref={t4}>25. 03. 1987.</p>
+  </div>
+  <div>
+  <h3 ref={t5}>ROLE</h3>
+    <p ref={t6}>Lead Designer</p>
+  </div>
+  <div>
+  <h3 ref={t7}>EMAIL</h3>
+    <p ref={t8}>stone@example.com</p>
+  </div>
+  <div>
+  <h3 ref={t9}>PHONE</h3>
+    <p ref={t10}>(+987) 987 654 321</p>
+  </div>
+  <div>
+  <h3 ref={t11}>WEBSITE</h3>
+    <p ref={t12}>www.somewebsite.com</p>
+  </div>
+  <div>
+  <h3 ref={t13}>LOCATION</h3>
+    <p ref={t14}>New York, USA</p>
+  </div>
+  <div>
+  <h3  ref={t15}>INTERESTS</h3>
+    <p ref={t16}>Games, Books, Movies</p>
+  </div>
+  <div>
+    <h3  ref={t17} className='gsap-anim-bottomToTop'>SOCIAL</h3>
+    <div className="about-container__left__icons">
+     <i ref={t18} aria-hidden="true" class="fab fa-behance"></i>
+     <i ref={t19} aria-hidden="true" class="fab fa-twitter"></i>
+     <i ref={t20} aria-hidden="true" class="fab fa-facebook-f"></i>
+     <i ref={t21} aria-hidden="true" class="fab fa-youtube"></i>
+    </div>
+  </div>
+</div>
+  <div className="about-container__right">
         <div className="about-container__right__bullet-points">
           <div className="about-container__right__bullet-points__item">
             <p>AWARDS</p>
-            <h3> <CountUp end={38} /> </h3>
+            <h3> {isABoutSection ? (<CountUp start={28} end={38} />) : 28} </h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>XP YEARS</p>
-            <h3> <CountUp end={12} />+</h3>
+            <h3> {isABoutSection ? (<CountUp end={12}/>) : 1}+</h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>CLIENTS</p>
-            <h3> <CountUp end={54} /> </h3>
+            <h3> {isABoutSection ? <CountUp end={54} /> : 44} </h3>
           </div>
           <div className="about-container__right__bullet-points__item">
             <p>PROJECTS</p>
-            <h3> <CountUp end={76} /> </h3>
+            <h3> {isABoutSection ? <CountUp end={76} /> : 67} </h3>
           </div>
         </div>
         <h2>Nam ultrices ultrices nec tortor<br />pulvinar esteras loremips est</h2>
@@ -198,7 +205,7 @@ export default function About() {
         <div className="about-container__right__button">
          <h4>Download CV</h4>
           <i aria-hidden="true" class="fas fa-download"></i>
-          </div>
+          </div> 
       </div>
     </section>
   )
