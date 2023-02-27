@@ -7,6 +7,12 @@ export default function Skills() {
   const t1 = useRef(null)
   const sectionTitle = useRef(null)
 
+  const pg1 = useRef(null)
+  const pg2 = useRef(null)
+  const pg3 = useRef(null)
+  const pg4 = useRef(null)
+  const pg5 = useRef(null)
+
   useEffect(() => {
     const el1 = t1.current
     const sectionTitleEl = sectionTitle.current
@@ -19,6 +25,17 @@ export default function Skills() {
     }} )
 
   }, [])
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 3500) {
+      pg1.current.style.animation = "pg1Anim 1.5s forwards ease-out"
+      pg2.current.style.animation = "pg2Anim 1.5s forwards ease-out"
+      pg3.current.style.animation = "pg3Anim 1.5s forwards ease-out"
+      pg4.current.style.animation = "pg4Anim 1.5s forwards ease-out"
+      pg5.current.style.animation = "pg5Anim 1.5s forwards ease-out"
+      console.log("khbm")
+    }
+  })
 
   return (
    <section className="skills-container" ref={t1} id="skills">
@@ -38,7 +55,7 @@ export default function Skills() {
         <div className="skills-container__right__item__right">
           <p>Creativity</p>
           <div className="skills-container__right__item__right__progress-bar">
-          <div className="skills-container__right__item__right__progress-bar__purple pg-1"></div>
+          <div className="skills-container__right__item__right__progress-bar__purple pg-1" ref={pg1}></div>
             <div className="skills-container__right__item__right__progress-bar__white"></div>
           </div>
         </div>
@@ -50,7 +67,7 @@ export default function Skills() {
         <div className="skills-container__right__item__right">
           <p>Cooking</p>
           <div className="skills-container__right__item__right__progress-bar">
-          <div className="skills-container__right__item__right__progress-bar__purple pg-2"></div>
+          <div className="skills-container__right__item__right__progress-bar__purple pg-2" ref={pg2}></div>
             <div className="skills-container__right__item__right__progress-bar__white"></div>
           </div>
         </div>
@@ -62,7 +79,7 @@ export default function Skills() {
         <div className="skills-container__right__item__right">
           <p>PHP</p>
           <div className="skills-container__right__item__right__progress-bar">
-          <div className="skills-container__right__item__right__progress-bar__purple pg-3"></div>
+          <div className="skills-container__right__item__right__progress-bar__purple pg-3" ref={pg3}></div>
             <div className="skills-container__right__item__right__progress-bar__white"></div>
           </div>
         </div>
@@ -74,7 +91,7 @@ export default function Skills() {
         <div className="skills-container__right__item__right">
           <p>Marketing</p>
           <div className="skills-container__right__item__right__progress-bar">
-          <div className="skills-container__right__item__right__progress-bar__purple pg-4"></div>
+          <div className="skills-container__right__item__right__progress-bar__purple pg-4" ref={pg4}></div>
             <div className="skills-container__right__item__right__progress-bar__white"></div>
           </div>
         </div>
@@ -86,7 +103,7 @@ export default function Skills() {
         <div className="skills-container__right__item__right">
           <p>Design</p>
           <div className="skills-container__right__item__right__progress-bar">
-            <div className="skills-container__right__item__right__progress-bar__purple pg-5"></div>
+            <div className="skills-container__right__item__right__progress-bar__purple pg-5" ref={pg5}></div>
             <div className="skills-container__right__item__right__progress-bar__white"></div>
           </div>
         </div>

@@ -83,17 +83,48 @@
 }
 
 .pg-1 {
-    width: 270px;
+    width: 10px;
+    transition: 1s;
 }
 .pg-2 {
-    width: 160px;
+    width: 10px;
+    transition: 1s;
 }
 .pg-3 {
-    width: 320px;
+    width: 30px;
+    transition: 1s;
 }
 .pg-4 {
-    width: 235px;
+    width: 25px;
+    transition: 1s;
 }
 .pg-5 {
-    width: 305px;
+    width: 35px;
+    transition: 1s;
+}
+
+@keyframes pg1Anim {
+    100% {
+        width: 270px;
+    }
+}
+@keyframes pg2Anim {
+    100% {
+        width: 160px;
+    }
+}
+@keyframes pg3Anim {
+    100% {
+        width: 320px;
+    }
+}
+@keyframes pg4Anim {
+    100% {
+        width: 235px;
+    }
+}
+@keyframes pg5Anim {
+    100% {
+        width: 305px;
+    }
 }
