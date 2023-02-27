@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
     &__left {
         padding: 45px;
         background-color: $main-purple;
@@ -28,6 +32,10 @@
     &__right {
         margin-left: 50px;
         width: 30%;
+        @media screen and (max-width: 600px) {
+            margin: auto;
+            width: 100%;
+        }
 
         &__item {
             display: flex;
@@ -66,6 +74,10 @@
                         background-color: $main-purple;
                         display: flex;
                         align-items: center;
+
+                        @media screen and (max-width: 600px) {
+                            max-width: 200px;
+                        }
                     }
     
                     &__white {
@@ -75,6 +87,10 @@
                         background-color: white;
                         border-radius: 100px;
                         z-index: -1;
+
+                        @media screen and (max-width: 600px) {
+                            max-width: 240px;
+                        }
                     }
                 }
             }

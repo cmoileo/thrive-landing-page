@@ -9,7 +9,6 @@ export default function Navbar() {
   const [mobileModal, setMobileModal] = useState(false)
 
   const handleClick = () => {
-    console.log(mobileModal)
     setMobileModal(!mobileModal)
   }
 

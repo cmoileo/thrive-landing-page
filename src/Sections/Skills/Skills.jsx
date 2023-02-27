@@ -33,7 +33,6 @@ export default function Skills() {
       pg3.current.style.animation = "pg3Anim 1.5s forwards ease-out"
       pg4.current.style.animation = "pg4Anim 1.5s forwards ease-out"
       pg5.current.style.animation = "pg5Anim 1.5s forwards ease-out"
-      console.log("khbm")
     }
   })
 

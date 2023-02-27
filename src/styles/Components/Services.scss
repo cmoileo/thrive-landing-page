@@ -12,6 +12,11 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    @media screen and (max-width: 600px) {
+        margin: auto;
+        margin-top: 150px;
+    }
+
     & div {
         background-color: $main-purple;
         height: 135px;
@@ -22,10 +27,19 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 600px) {
+            height: 100px;
+            width: 80%;
+        }
+
         & p {
             color: white;
             font-size: 40px;
             font-weight: 900;
+
+            @media screen and (max-width: 600px) {
+                font-size: 30px;
+            }
         }
     }
 }
